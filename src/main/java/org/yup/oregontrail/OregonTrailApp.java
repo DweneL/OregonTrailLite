@@ -17,6 +17,24 @@ public class OregonTrailApp {
         System.out.println(dwene.eat());
         System.out.println(dwene.eat());
         System.out.println(dwene.getFood());
+
+        Traveler eric = new Traveler("eric", 55, 145);
+
+
+        Wagon ourWagon = new Wagon(5);
+        //asking the wagon to give us the passenger list and we are checking the size (number of passengers)
+        System.out.println( "Number of people on the wagon: " + ourWagon.getPassengers().size());
+
+        //this line attempts to put dwene (or any traveler we want) into the wagon if there is room
+        System.out.println(ourWagon.join(dwene));
+
+        //asking the wagon to give us the passenger list and we are checking the size (number of passengers)
+        System.out.println( "Number of people on the wagon: " + ourWagon.getPassengers().size());
+//
+        System.out.println(ourWagon.join(eric));
+
+        System.out.println(ourWagon.getTotalFood());
+
     }
 
 }
